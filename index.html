@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gaming Quiz App</title>
+    <meta name="description" content="Answer some questions about old school games">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  </head>
+  <body>
+    <header class ="banner">
+      <div class="headingImg">
+        <a href="index.html">
+          <img class="logo" src="https://cdn.pixabay.com/photo/2017/01/30/21/01/kontroller-2022084__340.png" alt="playstation controller"/>
+        </a>
+    </div>
+      <div class="score">
+        <ul>
+          <li>Question:<span class="questionNumber">0</span>/7</li>
+          <li>Score: <span class="scores">0</span></li>
+        </ul>
+    </div>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>How much do you know about Video Games?</h1>
+        <button type="button" class="startButton">Start!</button>
+      </div>
+      <div class="questionAnswerForm"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="datastore.js"></script>
+  </body>
+</html>
