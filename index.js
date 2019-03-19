@@ -32,7 +32,6 @@ function generateQuestion() {
 	} else {
 		renderResults();
 		restartQuiz();
-		$('.questionNumber').text(1);
 	}
 }
 
@@ -98,7 +97,11 @@ function nextButton() {
 	$('main').on('click', '.nextButton', function(event) {
 		renderQuestion();
 		submitAnswer();
-		$('.questionNumber').text(questionNumber+1);
+		if (questionNumber < STORE.length) {
+			$('.questionNumber').text(questionNumber+1);
+		} else {
+			$('.questionNumber').text(7);
+		}
     //This function is responsible for handling the next button.
     console.log('`nextButton`, ran')
 });

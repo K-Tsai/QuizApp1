@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -175,3 +176,67 @@ h1{
     display: block;
     margin-top: 100px;
 }
+
+@media screen and (max-width: 1190px) and (min-width: 768px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .answerOption {
+        text-align: left;
+    }
+    
+    h2{
+        font-size: 18px;
+        text-align:center;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    ul {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    .answerOption {
+        text-align: center;
+    }
+
+    h2{
+        font-size: 18px;
+        text-align:center;
+    }
+
+    .quizStart{
+        margin: 100px;
+    }
+
+
+    
+}
+    
